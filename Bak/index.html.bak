@@ -14,7 +14,7 @@
 		<!-- meta character set -->
 		<meta charset="UTF-8">
 		<!-- Site Title -->
-		<title>Prof. Nitin J. Sanket's Personal Website</title>
+		<title>WPI RBE Course Website Testing</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
 			<!--
@@ -51,7 +51,7 @@
 				<div class="container main-menu">
 					<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
-				        <a href="index.html"><img src="img/logos/WPILogo.png" width="48px" alt="" title=""></a>
+				        <a href="index.html"><img src="img/logos/WPILogo.png" height="36px" alt="" title=""></a>
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
@@ -73,10 +73,10 @@
 							<source src="img/Website.mp4" type="video/mp4">
 						</video>
 					</div>
-						<div class="col-lg-6 col-md-6 banner-left">
-							<h1 style="z-index:10">Nitin J. Sanket</h1>
-							<h2 style="z-index:10">Assistant Professor <img src="img/logos/WPILogo.png" height="48px"></h2>
-						</div>
+						<meta charset="utf-8">
+						<title>Redirecting to https://wpirbe.github.io/courses.html</title>
+						<meta http-equiv="refresh" content="0; URL=https://wpirbe.github.io/courses.html">
+						<link rel="canonical" href="https://wpirbe.github.io/courses.html">
 						<!-- <div class="logo-background"> -->
 						<!-- <div class = "banner-left"> -->
 						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-4">

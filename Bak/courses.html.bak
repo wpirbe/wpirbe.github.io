@@ -14,7 +14,7 @@
 		<!-- meta character set -->
 		<meta charset="UTF-8">
 		<!-- Site Title -->
-		<title>Prof. Nitin J. Sanket's Personal Website</title>
+		<title>WPI RBE Course Website Testing</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
 			<!--
@@ -45,7 +45,7 @@
 				<div class="container main-menu">
 					<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
-				        <a href="index.html"><img src="img/logos/WPILogo.png" width="48px" alt="" title=""></a>
+				        <a href="index.html"><img src="img/logos/WPILogo.png" height="36px" alt="" title=""></a>
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
@@ -58,28 +58,13 @@
 			</header><!-- #header -->	
 			<!-- End footer Area -->			<!-- EDIT ME -->
 
-			<!-- start banner Area -->
-			<!-- <section class="about-banner">
-				<div class="container">				
-					<div class="row d-flex align-items-center justify-content-center">
-						<div class="about-content col-lg-12">
-							<h1 class="text-white">
-								About Me				
-							</h1>	
-							<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="about.html"> About Me</a></p>
-						</div>	
-					</div>
-				</div>
-			</section> -->
-			<!-- End banner Area -->	
 
 			<!-- Start home-about Area -->
 			<section class="sample-text-area">
 				<div class="container">
 					<div class="menu-content pb-20">
                     <div class="title text-center">
-                        <h1 class="mb-10" style="padding-top: 40px">Teaching Timeline</h1>
-                        <p>What I have taught.</p>
+                        <h1 class="mb-10" style="padding-top: 40px">Course Offerings</h1>
                     </div>
                 </div>
 				</div>
@@ -87,15 +72,7 @@
 			<!-- End home-about Area -->	
 
             	<!-- Start timeline Area -->
-			<section class="timeline pb-120">
-            <!-- <div class="text-center">
-                <div class="menu-content pb-20">
-                    <div class="title text-center">
-                        <h1 class="mb-10" style="padding-top: 40px">Teaching Timeline</h1>
-                        <p>What I have taught.</p>
-                    </div>
-                </div>
-            </div>	 -->			
+			<section class="timeline pb-120">		
 			    <div class="whole-wrap">
 				<div class="container">
 					<div class="section-top-border">
@@ -142,8 +119,6 @@
 							</div>
 						</div>
 						<hr>
-
-
 
 						<div class="row">
 							<div class="col-lg-6 col-md-6 mt-sm-20 left-align-p">
@@ -240,162 +215,12 @@
 						<hr>
 
 
-					<!-- <div class="row">
-							<h3 class="mb-30">CMSC 426: Image Processing</h3>
-							<div class="col-md-6 mt-sm-20 left-align-p">
-						        <h5><b>Teaching Assistant</b></h5>
-						        <p><b>Session:</b> Fall 2016</p>
-						        <p><b>Instructor:</b> <a href="http://users.umiacs.umd.edu/~yiannis/"> Prof. Yiannis Aloimonos</a></p>
-		        			<p>This is an introductory course on computer vision and computational photography. This course will explore image formation, image features, image segmentation, image stitching, image recognition, motion estimation, 3D point clouds and will touch upon basics of augmented reality. This course was designed by me.</p>
-						         <h5> <a href="https://www.cs.umd.edu/class/fall2016/cmsc426/"><i class="fa fa-globe"></i>&nbsp;Course Webpage&nbsp;&nbsp;</a></h5>
-							</div>
-							<div class="col-md-6 mt-sm-20 right-align-p">
-								<img src="img/teaching/cmsc426.png" alt="" class="img-fluid">
-							</div>
-					</div>
-					</div>
-					<hr> -->
 
 				</div>
-			  <!-- <ul> -->
-			    <!-- <li>
-			      <div class="content-l">
-			      	<img class="img-fluid mx-auto d-block mb-30" src="img/teaching/enae788m.png" width="70%" alt="">
-			        <h4>
-			          <time>ENAE788M: Hands-On Autonomous Aerial Robotics</time>
-			        </h4>
-			        <h5><b>Instructor</b></h5>
-			        <p><b>Session:</b> Fall 2019</p>
-			        <h5> <a href="http://prg.cs.umd.edu/PRGFlow"><i class="fa fa-globe"></i>&nbsp;Course Webpage&nbsp;&nbsp;</a></h5>
-			        <p>This is an advanced graduate course that exposes the students with mathematical foundations of computer vision, planning and control for aerial robots. This course was designed and taught by me and <a href="https://chahatdeep.github.io"> Chahat Deep Singh</a>. The course is designed to balance theory with an application on hardware.</p>
-			      </div>
-			    </li> -->
-			    <!-- <li>
-			      <div class="content-l">
-			      	<img class="img-fluid mx-auto d-block mb-30" src="img/teaching/cmsc828t.jpg" width="70%" alt="">
-			        <h4>
-			          <time>CMSC 828T: Vision, Planning and Control in Aerial Robotics</time>
-			        </h4>
-			        <h5><b>Instructor</b></h5>
-			        <p><b>Session:</b> Fall 2017</p>
-			        <h5> <a href="https://cmsc828t.github.io/"><i class="fa fa-globe"></i>&nbsp;Course Webpage&nbsp;&nbsp;</a></h5>
-			        <p>This is a comprehensive course on aerial robotics, with a focus on quadcopters and their related hardware and software implementations. The course will cover both the theoretical and practical aspects of quadcopters, with special focus on perception, planning and control algorithms involved in the same. This course was completely designed by me.</p>
-			      </div>
-			    </li> -->
-			    <!-- <li>
-			      <div class="content-l">
-			      	<img class="img-fluid mx-auto d-block mb-30" src="img/teaching/cmsc733.jpg" width="100%" alt="">
-			        <h4>
-			          <time>CMSC 733: Classical and Deep Learning Approaches for Geometric Computer Vision</time>
-			        </h4>
-			        <h5><b>Teaching Assistant</b></h5>
-			        <p><b>Session:</b> Spring 2019</p>
-			        <p><b>Instructor:</b> <a href="http://users.umiacs.umd.edu/~yiannis/"> Prof. Yiannis Aloimonos</a></p>
-			        <h5> <a href="https://prg.cs.umd.edu/cmsc733"><i class="fa fa-globe"></i>&nbsp;Course Webpage&nbsp;&nbsp;</a></h5>
-			        <p>This is an advanced course on graduate computer vision and computational photography. This course will explore image formation, image features, image segmentation, image stitching, image recognition, motion estimation, 3D point clouds and will touch upon basics of augmented reality. This course is heavily redesigned this time to showcase how to model classical 3D geometry problems using Deep Learning. This course was designed by me and <a href="https://chahatdeep.github.io"> Chahat Deep Singh.</a></p>
-			      </div>
-			    </li> -->
-			    <!-- <li>
-			      <div class="content-l">
-			      	<img class="img-fluid mx-auto d-block mb-30" src="img/teaching/cmsc733.jpg" width="100%" alt="">
-			        <h4>
-			          <time>CMSC 733: Computer Processing of Pictorial Information</time>
-			        </h4>
-			        <h5><b>Teaching Assistant</b></h5>
-			        <p><b>Session:</b> Spring 2017</p>
-			        <p><b>Instructor:</b> <a href="http://users.umiacs.umd.edu/~yiannis/"> Prof. Yiannis Aloimonos</a></p>
-			        <h5> <a href="https://www.cs.umd.edu/class/spring2017/cmsc733/index.shtml"><i class="fa fa-globe"></i>&nbsp;Course Webpage&nbsp;&nbsp;</a></h5>
-			        <p>This is an advanced course on graduate computer vision and computational photography. This course will explore image formation, image features, image segmentation, image stitching, image recognition, motion estimation, 3D point clouds and will touch upon basics of augmented reality. This course was designed by me.</a></p>
-			      </div>
-			    </li> -->
-			    <!-- <li>
-			      <div class="content-l">
-			      	<img class="img-fluid mx-auto d-block mb-30" src="img/teaching/cmsc426.png" width="100%" alt="">
-			        <h4>
-			          <time>CMSC 426: Image Processing</time>
-			        </h4>
-			        <h5><b>Teaching Assistant</b></h5>
-			        <p><b>Session:</b> Fall 2016</p>
-			        <p><b>Instructor:</b> <a href="http://users.umiacs.umd.edu/~yiannis/"> Prof. Yiannis Aloimonos</a></p>
-			        <h5> <a href="https://www.cs.umd.edu/class/fall2016/cmsc426/"><i class="fa fa-globe"></i>&nbsp;Course Webpage&nbsp;&nbsp;</a></h5>
-			        <p>This is an introductory course on computer vision and computational photography. This course will explore image formation, image features, image segmentation, image stitching, image recognition, motion estimation, 3D point clouds and will touch upon basics of augmented reality. This course was designed by me.</a></p>
-			      </div>
-			    </li> -->
-
-			  <!-- </ul> -->
+			
 			</section>		
 
-			<!-- End timeline Area -->
-
-
-			<!-- Start testimonial Area -->
-		    <!-- <section class="testimonial-area section-gap">
-		        <div class="container">
-		            <div class="row d-flex justify-content-center">
-		                <div class="menu-content pb-70 col-lg-8">
-		                    <div class="title text-center">
-		                        <h1 class="mb-10">Client’s Feedback About Me</h1>
-		                        <p>It is very easy to start smoking but it is an uphill task to quit it. Ask any chain smoker or even a person.</p>
-		                    </div>
-		                </div>
-		            </div>
-		            <div class="row">
-		                <div class="active-testimonial">
-		                    <div class="single-testimonial item d-flex flex-row">
-		                        <div class="thumb">
-		                            <img class="img-fluid" src="img/elements/user1.png" alt="">
-		                        </div>
-		                        <div class="desc">
-		                            <p>
-		                                Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you.		     
-		                            </p>
-		                            <h4>Harriet Maxwell</h4>
-		                            <p>CEO at Google</p>
-		                        </div>
-		                    </div>
-		                    <div class="single-testimonial item d-flex flex-row">
-		                        <div class="thumb">
-		                            <img class="img-fluid" src="img/elements/user2.png" alt="">
-		                        </div>
-		                        <div class="desc">
-		                            <p>
-		                                A purpose is the eternal condition for success. Every former smoker can tell you just how hard it is to stop smoking cigarettes. However.
-		                            </p>
-		                            <h4>Carolyn Craig</h4>
-		                            <p>CEO at Facebook</p>
-		                        </div>
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-		    </section> -->
-		    <!-- End testimonial Area -->			
-
-		    <!-- Start brands Area -->
-		    <!-- <section class="brands-area">
-		        <div class="container">
-		            <div class="brand-wrap">
-		                <div class="row align-items-center active-brand-carusel justify-content-start no-gutters">
-		                    <div class="col single-brand">
-		                        <a href="#"><img class="mx-auto" src="img/l1.png" alt=""></a>
-		                    </div>
-		                    <div class="col single-brand">
-		                        <a href="#"><img class="mx-auto" src="img/l2.png" alt=""></a>
-		                    </div>
-		                    <div class="col single-brand">
-		                        <a href="#"><img class="mx-auto" src="img/l3.png" alt=""></a>
-		                    </div>
-		                    <div class="col single-brand">
-		                        <a href="#"><img class="mx-auto" src="img/l4.png" alt=""></a>
-		                    </div>
-		                    <div class="col single-brand">
-		                        <a href="#"><img class="mx-auto" src="img/l5.png" alt=""></a>
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-		    </section> -->
-		    <!-- End brands Area -->	
+	
 
             <!-- EDIT FOOT -->
             	<!-- start footer Area -->
@@ -416,7 +241,7 @@
             	        </div>
             	    </div>
             	</footer>
-            	<!-- End footer Area -->            	<!-- End footer Area -->            <!-- EDIT FOOT -->	
+            	<!-- End footer Area -->            	<!-- End footer Area -->            	<!-- End footer Area -->            <!-- EDIT FOOT -->	
 
 			<script src="js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="js/popper.min.js"></script>
