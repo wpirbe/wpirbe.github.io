@@ -1,9 +1,11 @@
 TODO:
 - Add Custom path with ../ for inner folders
-- News section
-- Projects
-- Try multiple videos
-- Add google page views
+- Add google page views (https://clustrmaps.com/)
+- Script for Making Images exactly 3:1
+- Update Events
+
+# Alumni
+
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171009851-1"></script>

@@ -57,9 +57,14 @@ $black			: #222;
   /*--themecolorLines: #4ceb95;*/
 
   /*Blue Theme*/
-  --themecolor: #1586b3;  
+/*  --themecolor: #1586b3;  
   --themecolorrgba: rgba(21, 134, 179, 0.2);
-  --themecolorLines: #1586b3;
+  --themecolorLines: #1586b3;*/
+
+   /* WPI Colors*/
+    --themecolor: #AC2B37;  
+  --themecolorrgba: rgba(172, 43, 55, 1.0);
+  --themecolorLines: #AC2B37;
 
   /*Red Theme*/
   /*--themecolor: #DB4437;*/
@@ -1403,8 +1408,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .ordered-list li {
   list-style-type: decimal-leading-zero;
-  color: #8490ff;
-  font-weight: 500;
+/*  color: #8490ff;*/
+  color: #333333;
+/*  font-weight: 500;*/
   line-height: 1.82em !important;
 }
 
@@ -2095,7 +2101,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   transition: all 0.5s;
   z-index: 997;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(0, 0, 0, 0.95); /*rgba(169, 176, 183, 0.5); /* WPI Gray */
 }
 
 #header.header-scrolled {
@@ -2316,7 +2322,7 @@ color: var(--linkhover);
   padding: 0 8px 0px 8px;
   text-decoration: none;
   display: inline-block;
-  color: #222;
+  color: #ddd; /* #222 */
   font-weight: 800;
   font-size: 16px;
   text-transform: uppercase;
@@ -2335,7 +2341,7 @@ color: var(--linkhover);
   margin: 22px 0 0 0;
   padding: 10px;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  background: #fff;
+  background: rgba(0,0,0,0.9);
 }
 
 .nav-menu ul li {
@@ -2343,12 +2349,13 @@ color: var(--linkhover);
 }
 
 .nav-menu ul li a {
+  background-color: rgba(0,0,0,0.9);
   padding: 5px 10px;
-  color: #333;
+  color: #ddd;
   transition: 0.3s;
   display: block;
-  font-size: 12px;
-  text-transform: none;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .nav-menu ul li:hover > a {
@@ -2376,11 +2383,11 @@ color: var(--linkhover);
 }
 
 #mobile-nav-toggle i {
-  color: #222;
+  color: #ddd;
   font-weight: 900;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1470px) {
   #mobile-nav-toggle {
     display: inline;
   }
@@ -2496,10 +2503,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #008000;
 }
 
+
 .p1-gradient-bg, .banner-left .primary-btn, .home-about-right .primary-btn, .facts-area, .thumb .overlay-bg, .price-area .single-price:hover, .brands-area, .about-banner, .sb_bar {
-  background: -moz-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+  /*background: -moz-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
   background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
-  background: -ms-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+  background: -ms-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);*/
+  background: rgba(255, 255, 255, 0.98);
 }
 
 .p1-gradient-color, .single-services:hover .lnr {
@@ -2677,17 +2686,20 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .banner-social {
   /*margin: 20px 0;*/
-  margin-left: -20vw;
-  margin-top: 35vh;
+  margin-left: 0;
+  margin-top: 0;
   font-size: 48px;
   display: flex;
   position: absolute;
   top: 0;
   left: 0;
+      justify-content: center;
+    align-items: center;
   /*text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;*/
   /*text-transform: uppercase;*/
   /*Add media here*/
 }
+
 
 .banner-social a{
 color: white;
@@ -2938,6 +2950,16 @@ color: var(--linkhover);
   }
 }
 
+.single-fact a {
+      color: #333; /* Set the initial font color */
+      text-decoration: none; /* Remove the default underline */
+    }
+    
+    /* Change the hover color for the <a> tag inside the single-fact class */
+    .single-fact a:hover {
+      color: var(--themecolor); /* Set the hover font color */
+    }
+
 /*--------- End Facts Area -------------*/
 /*--------- Start Portfolio Area -------------*/
 .portfolio-area .primary-btn {
@@ -3066,7 +3088,7 @@ color: var(--linkhover);
 }
 
 .single-portfolio:hover .thumb .overlay-bg {
-  opacity: .85;
+  opacity: .92;
 }
 
 .thumb .overlay-bg {
@@ -3368,7 +3390,7 @@ color: var(--linkhover);
   -ms-filter: grayscale(100%);
   -o-filter: grayscale(100%);
   filter: grayscale(100%);
-  opacity: .5;
+  opacity: .8;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -3851,8 +3873,8 @@ dl.accordion.time-line:before {
 }
 
 .services .icon-box:hover {
-  /*background: var(--themecolorrgba);
-  border-color: var(--themecolorrgba);*/
+  background: var(--themecolorrgba);
+  border-color: var(--themecolorrgba);
 }
 
 .services .icon-box:hover .icon {
@@ -3860,7 +3882,7 @@ dl.accordion.time-line:before {
 }
 
 .services .icon-box:hover .icon i {
-  /*color: var(--themecolor);*/
+  color: var(--themecolor);
 }
 
 .services .icon-box:hover .icon::before {

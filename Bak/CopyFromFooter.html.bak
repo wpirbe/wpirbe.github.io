@@ -1,19 +1,14 @@
 <!-- start footer Area -->
-<footer class="footer-area section-gap">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-5 col-md-6 col-sm-6">
-                <div class="single-footer-widget">
-                    <p class="footer-text"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-6 col-sm-6 social-widget">
-                <div class="single-footer-widget">
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
+            <section class="facts-area section-gap" id="facts-area"  style="background-color: rgba(255, 255, 255, 1.0); padding: 40px">
+                <div class="container">     
+                <div class="title text-center">
+                        <p> <a href="index.html"><img src="img/logos/LogoBlackRed.png" width="128px" alt="" title=""></a><br><br>
+                            Perception and Autonomous Robotics Group <br>
+                            Worcester Polytechnic Institute <br>
+                            Copyright © 2023<br>
+                            <span style="font-size: 10px">Website based on <a href="https://colorlib.com" target="_blank">Colorlib</a></span>
+                        </p>
+                    </div>
+                </div>  
+            </section>  
 <!-- End footer Area -->

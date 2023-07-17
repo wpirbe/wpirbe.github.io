@@ -12,9 +12,14 @@
   /*--themecolorLines: #4ceb95;*/
 
   /*Blue Theme*/
-  --themecolor: #1586b3;  
+/*  --themecolor: #1586b3;  
   --themecolorrgba: rgba(21, 134, 179, 0.2);
-  --themecolorLines: #1586b3;
+  --themecolorLines: #1586b3;*/
+
+  /* WPI Colors*/
+    --themecolor: #AC2B37;  
+  --themecolorrgba: rgba(172, 43, 55, 1.0);
+  --themecolorLines: #AC2B37;
 
   /*Red Theme*/
   /*--themecolor: #DB4437;*/
@@ -251,6 +256,7 @@ a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus {
 a:not([href]):not([tabindex]):focus {
   outline: 0;
 }
+
 
 pre,
 code,
@@ -550,32 +556,6 @@ mark,
   height: auto;
 }
 
-.image-container {
-  position: relative;
-}
-
-.hover-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity .2s;
-}
-
-/* ChatGPT */
-.image-container:hover .hover-image {
-  opacity: 1;
-}
-
-.default-image {
-  transition: opacity .2s;
-  z-index: 1;
-}
-
-.image-container:hover .default-image {
-  opacity: 0;
-}
-
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -687,11 +667,47 @@ pre code {
   margin-left: auto;
 }
 
+.rowunmod {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 0%;
+  margin-left: 0%;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: -30%;
+  margin-left: -30%;
+}
+
+
+@media (max-width: 1850px) {
+.row {
+    margin-right: -25%;
+    margin-left: -25%;
+  }
+}
+
+@media (max-width: 1700px) {
+.row {
+    margin-right: -20%;
+    margin-left: -20%;
+  }
+}
+
+@media (max-width: 1600px) {
+.row {
+    margin-right: -15%;
+    margin-left: -15%;
+  }
+}
+
+@media (max-width: 1470px) {
+.row {
+    margin-right: -4%;
+    margin-left: -4%;
+  }
 }
 
 .no-gutters {
@@ -916,6 +932,11 @@ pre code {
   .col-sm-3 {
     flex: 0 0 25%;
     max-width: 25%;
+  }
+  .col-sm-25 {
+    flex: 0 0 20%;
+    max-width: 20%;
+    padding: 5%;
   }
   .col-sm-4 {
     flex: 0 0 33.33333%;
@@ -2194,6 +2215,10 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   }
 }
 
+.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
 .btn {
   display: inline-block;
   font-weight: 400;
@@ -2892,7 +2917,7 @@ tbody.collapse.show {
   z-index: 1000;
   display: none;
   float: left;
-  min-width: 10rem;
+  min-width: 200px;
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
@@ -3003,7 +3028,7 @@ tbody.collapse.show {
   padding: 0.25rem 1.5rem;
   clear: both;
   font-weight: 400;
-  color: #212529;
+  color: #ddd;
   text-align: inherit;
   white-space: nowrap;
   background-color: transparent;
@@ -3543,10 +3568,43 @@ tbody.collapse.show {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
+  text-decoration: none;
+  display: inline-block;
+  color: #ddd; /* #222 */
+  font-weight: 800;
+  font-size: 16px;
+  text-transform: uppercase;
+  outline: none;
 }
 
-.nav-link:hover, .nav-link:focus {
+.nav-link a {
+  color: #ddd; /* #222 */
+}
+
+.nav-link li:hover > a, .menu-active, .parent-active > .sf-with-ul {
+    color: var(--themecolor) !important;
+}
+
+
+.nav-link a.focus {
   text-decoration: none;
+      color: var(--themecolor); !important;
+    }
+
+.nav-link a:hover {
+  text-decoration: none;
+      color: var(--themecolor); !important;
+    }
+
+    .nav-link a.active {
+  text-decoration: none;
+      color: var(--themecolor); !important;
+    }
+    
+
+.nav-link:hover, .nav-link:active, .nav-link:focus {
+  text-decoration: none;
+  color: var(--themecolor); !important;
 }
 
 .nav-link.disabled {
@@ -4026,6 +4084,72 @@ tbody.collapse.show {
 .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
   color: #fff;
 }
+
+ .nav-menu-container .nav-item {
+    position: relative;
+  }
+
+  .nav-menu-container .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 999;
+    margin-top: -5px;
+    min-width: 200px;
+    background-color: #f;
+  }
+
+  .nav-menu-container .nav-item:hover > .dropdown-menu,
+  .nav-menu-container .dropdown-menu:hover  {
+    display: block;
+  }
+
+  .nav-menu-container .dropdown-menu li {
+    padding: 5px;
+    background-color: #ffffff;
+     border: 5px solid transparent; /* Add transparent border to extend the active area */
+  }
+
+   .nav-menu-container .dropdown-menu:hover ~ .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-menu {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .dropdown-menu li {
+    margin-top: 10px;
+  }
+
+  .dropdown-menu li a:hover,
+  .dropdown-menu li a:focus {
+    color: var(--themecolor); /* Change the color for clicked submenu item */
+  }
+
+
+  .title a {
+      color: var(--themecolor); /* Set the initial font color */
+      text-decoration: none; /* Remove the default underline */
+    }
+    
+    /* Change the hover color for the <a> tag inside the title class */
+    .title a:hover {
+      color: var(--themecolor); /* Set the hover font color */
+    }
+
+
+.black-links a {
+    color: #000 !important;
+  }
+
+  .black-links a:hover {
+    color: var(--themecolor) !important;
+  }
 
 .card {
   position: relative;
@@ -5521,13 +5645,88 @@ button.close {
 .carousel-caption {
   position: absolute;
   right: 15%;
-  bottom: 20px;
+  bottom: 40px;
   left: 15%;
   z-index: 10;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
   color: #fff;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+}
+
+.carousel-caption a{
+  color: #fff;
+}
+
+.carousel-caption a:hover {
+  color: var(--themecolor);
+}
+
+
+.carousel-caption h2 {
+  color: #fff;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.container-full-width {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.carousel-control-prev {
+  left: 15px;
+  border-radius: 50%;
+  width: 5vw;
+  height: 5vw;
+}
+
+.carousel-control-next {
+  right: 15px;
+  border-radius: 50%;
+  width: 5vw;
+  height: 5vw;
+}
+
+.carousel-indicators li {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 1vw;
+  height: 1vw;
+  margin: 0 4px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-indicators li.active {
+  background-color: var(--themecolor); /* Replace #ff0000 with your desired color */
+}
+
+/* Animation plays even when hovered on */
+.carousel:hover .carousel-item {
+  animation-play-state: paused; 
 }
 
 .align-baseline {
